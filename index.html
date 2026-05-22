@@ -23,43 +23,81 @@
     </div>
 
     <section id="inicio">
-        <h2>Inicio</h2>
+        <h2>⏳ Inicio</h2>
         <img src="https://banderasysoportes.com/wp-content/uploads/atm-1.png">
         <p>Bienvenido a la página del Atlético de Madrid</p>
     </section>
 
     <section id="historia">
-        <h2>Historia</h2>
+        <h2>🕐 Historia</h2>
         <img src="https://img-estaticos.atleticodemadrid.com/system/file5s/29934/medium2x2/7rmDfpO-Fy_fundacional.jpg.jpg?1481114799">
         <p>El Atlético de Madrid fue fundado en el año 1903 y es uno de los clubes más importantes del mundo.</p>
     </section>
 
     <section id="jugadores">
-        <h2>Jugadores</h2>
+        <h2>⚽ Jugadores</h2>
         <div class="tarjetas">
             <div class="tarjeta">
-                <img src="https://img.uefa.com/imgml/TP/players/1/2026/cutoff/250019498.webp">
-                <h3>Griezmann</h3>
-                <p>Delantero</p>
+
+                <button onclick="anterior(this)">←</button>
+
+                <img class="jugador-img" src="https://img.uefa.com/imgml/TP/players/1/2026/cutoff/250019498.webp">
+
+                <h3 class="jugador-nombre">Griezmann</h3>
+                <p class="jugador-posicion">Delantero</p>
+
+                <button onclick="siguiente(this)">→</button>
+                
             </div>
 
             <div class="tarjeta">
-                <img src="https://img-estaticos.atleticodemadrid.com/system/fotos/5883/destacado_600x600/13_oblak.png?1501081959">
-                <h3>Oblak</h3>
-                <p>Portero</p>
+
+                <button onclick="anterior(this)">←</button>
+
+                <img class="jugador-img" src="https://img-estaticos.atleticodemadrid.com/system/fotos/5883/destacado_600x600/13_oblak.png?1501081959">
+                
+                <h3 class="jugador-nombre">Oblak</h3>
+                <p class="jugador-posicion">Portero</p>
+
+                <button onclick="siguiente(this)">→</button>
+
             </div>
+
             <div class="tarjeta">
-                <img src="https://img-estaticos.atleticodemadrid.com/system/fotos/18069/destacado_600x600/koke.png?1754735208">
-                <h3>Koke</h3>
-                <p>Centrocampista</p>
+
+                <button onclick="anterior(this)">←</button>
+
+                <img class="jugador-img" src="https://img-estaticos.atleticodemadrid.com/system/fotos/18069/destacado_600x600/koke.png?1754735208">
+               
+                <h3 class="jugador-nombre">Koke</h3>
+                <p class="jugador-posicion">Centrocampista</p>
+
+                <button onclick="siguiente(this)">→</button>
+
             </div>
+            
         </div>
     </section>
 
     <section id="estadio">
-        <h2>Estadios</h2>
+        <h2>🏠 Estadios</h2>
         <img src="https://i.ytimg.com/vi/VIwzbHzF9Do/maxresdefault.jpg">
         <p>El estadio del Atlético de Madrid es el Riyadh Air Metropolitano</p>
     </section>
+   
+   <section id="interaccion">
+    <h2>👆 Interacción</h2>
+
+        <button onclick="cambiarJugador()">Cambiar jugador</button>
+        <button onclick="ocultar()">Mostrar/Ocultar jugadores</button>
+        <button onclick="mensaje()"Haz clic></button>
+        <button onclick="cambiarColor()">Cambiar fondo</button>
+   </section>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>© 2026 Web del Atlético de Madrid</p>
+    </footer>
 </body>
 </html>
